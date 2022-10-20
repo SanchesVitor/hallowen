@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Fruktur', cursive;
+}
+
+body {
+    background: #010405;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #010405, transparent);
+    z-index: 100000;
+}
+section img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+}
+.sec {
+    position: relative;
+    padding: 100px;
+    text-align: center;
+}
+
+.sec h2 {
+    font-size: 5em;
+    color: #ff9425;
+    margin-bottom: 20px;
+}
+
+.sec p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: consolas;
+    padding: 20px;
+}

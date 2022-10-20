@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallowen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="imagens/lua.jpg" id= "lua" alt="lua">
+        <img src="imagens/morc.png" id="morc" alt="morc">
+        <img src="imagens/castelo.png" id="castelo" alt="castelo">
+        <img src="imagens/bruxa.png" id="bruxa" alt="bruxa">
+        <img src="imagens/lobo.png" id="lobo" alt="lobo">
+    </section>
+    <div class="sec">
+        <div class="container">
+            <h2>Happy Hallowen</h2>
+            <p>🦇🦇🎃🎃🦇🦇🎃🎃🦇🦇🎃🎃🦇🦇🎃🎃</p>
+            <p>Feliz hallowen a todos!!! <br>PS: Galera do T.I</p>
+            <p>🦇🦇🎃🎃🦇🦇🎃🎃🦇🦇🎃🎃🦇🦇🎃🎃</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to("#bruxa",{
+            scrollTrigger : {
+                scrub:0.5,
+            },
+            x : 1500,
+            y : 500,
+        })
+
+        gsap.from("#lobo",{
+            scrollTrigger : {
+                scrub:0.5,
+            },
+            x : 400,
+        })
+
+        gsap.from("#castelo",{
+            scrollTrigger : {
+                scrub:0.5,
+            },
+            x : -100,
+        })
+
+        gsap.to("#morc",{
+            scrollTrigger : {
+                scrub:0.5,
+            },
+            scale : 1.5,
+        })
+    </script>
+</body>
+</html>
